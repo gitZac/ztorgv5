@@ -1,0 +1,45 @@
+.text-block{ //For embedded text styles
+    
+    &--intro{
+        color:$colorGrayDark;
+    }
+
+    &--promo{
+
+    }
+    
+    &__title{
+            
+        &--promo{
+            margin: 2rem 0;
+        }
+    }
+    
+    &__tagline{
+        
+        &--promo{
+            margin:2rem 0;
+        }
+    }
+    
+    &__item{    
+    }
+    
+    &__info-bar{
+        color:$colorGrayMid;
+
+        p{
+            display:inline;
+        }
+    }
+
+    p{
+        margin: 1rem 0;
+    }
+}
+
+.title-text-image{
+    &__title{
+        margin:10px 0;
+    }
+}

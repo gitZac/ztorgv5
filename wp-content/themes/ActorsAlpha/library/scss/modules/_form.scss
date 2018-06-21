@@ -1,0 +1,14 @@
+.wpcf7{
+    
+    .field{
+        margin-bottom: 20px;
+        max-width: 85%;
+    }
+    
+    input, textarea{
+        width:100%;
+        border: 3px solid $colorPrimaryDark;
+        border-radius: .2rem;
+        padding: 15px 10px;
+    }
+}

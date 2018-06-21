@@ -1,0 +1,40 @@
+.bio{
+    display:block;
+    
+    &__image{
+        float:left;
+        margin:2rem;
+        width:25rem;
+        
+        &--small{
+            width:20rem;
+            margin-right:1rem;
+        }
+    }
+
+    &__image img{
+        -webkit-box-shadow:0 3px 6px rgba(0,0,0,.25);
+        box-shadow:0 3px 6px rgba(0,0,0,.25);
+        background-color:#fff;
+        -webkit-transform:rotate(5deg);
+        transform:rotate(5deg);
+    }
+
+    &__content{
+        margin-right:2.5rem;
+        margin-bottom:2.5rem;
+        
+        &--small{
+            margin:0;
+        }
+    }
+        
+    &__content p{
+            margin: 1rem 0;
+            max-width: 60rem;
+            
+            @include respond (tab-port){
+                max-width: 50rem;
+        }
+    }
+}

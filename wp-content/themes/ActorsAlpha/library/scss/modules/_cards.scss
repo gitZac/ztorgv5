@@ -1,0 +1,93 @@
+.card{
+    
+    &--stacked{
+                
+        &__single{
+            margin: 1rem 0;
+            padding-bottom:1.5rem;
+            border-radius: .2rem;
+            box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
+            background-color: $colorGraySuperLight;
+        }
+        
+        &__image{
+            max-height:25rem;
+            overflow:hidden;            
+        }
+        
+        &__image img{
+            width:100%;
+            padding:0;
+        }
+        
+        &__text{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        
+        &__text p{
+            margin-bottom: 1rem;
+        }
+        
+        &__title{
+            margin:1rem 0;
+        }
+        
+        &__links{
+        }
+        
+        &__links a{
+            margin-right: 1rem;
+        }
+    }
+        
+    &__single{
+        border-bottom: 1px solid #e5e5e5;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        
+        @include respond(phone){
+            border-bottom: none;
+        }
+        
+        @include respond(phone){
+            max-width:40rem;
+        }
+    }
+    
+    &__single-title{
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+    }
+    
+    &__single-title-link{
+        color:#000;
+    }
+    
+    &__single-title-link:hover{
+        border-bottom: 2px solid #000;
+    }
+    
+    &__single-image{
+        
+        &--mxh{
+            max-height: 30rem;
+        }
+        
+        @include respond(phone){
+            padding:1rem 0;
+        }
+    }
+    
+    &__single-details{
+        
+        @include respond(phone){
+            padding:1rem 0;
+        }
+    }
+    
+    &__single-dates p, &__single-prices p{
+        color:$colorTextMuted;
+    }
+}

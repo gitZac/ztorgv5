@@ -1,0 +1,100 @@
+//MARGIN
+.u-no-tb-margin{
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+
+.u-tb-margin-20{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.u-tb-padding-40{
+    padding-top:4rem;
+    padding-bottom: 4rem;
+}
+
+.u-t-margin-50{
+    margin-top:3rem;
+    
+    @include respond(tab-port){
+        margin-top: 0;
+    }
+}
+//PADDING
+
+//DISPLAY
+.u-d-iblock{
+    display: inline-block;
+}
+
+.u-a-flxend{
+    align-self: flex-end;
+}
+
+.clear-fix{
+	clear:both;
+}
+
+//COLOR
+.u-color-primary{
+    color:$colorPrimary;
+}
+
+.u-color-primary-light{
+    color:$colorPrimaryLight;
+}
+
+.u-color-primary-mid{
+   color:$colorPrimaryMid;
+}
+
+.u-color-gray-light{
+    color:$colorGrayLight;
+}
+
+.u-color-gray-mid{
+    color:$colorGrayMid;
+}
+
+.u-color-gray-dark{
+    color:$colorGrayDark
+}
+
+.u-bgcolor-primary{
+    background-color:$colorPrimary;
+}
+
+.u-bgcolor-primary-light{
+    background-color:$colorPrimaryLight;
+}
+
+.u-bgcolor-primary-mid{
+    background-color:$colorPrimaryMid;
+}
+
+.u-bgcolor-graylight{
+    background-color: $colorGrayLight;
+}
+
+.u-text-bold, .u-text-bold p{
+    font-weight:700;
+}
+
+.background-fade{
+	background-color:#aac2ce;
+}
+
+.e-overlay-fade{
+  background: rgba(0,0,0,0.5);
+	opacity: 1;
+  transition:opacity .5s ease;
+}
+
+.e-overlay-fade:hover{
+	opacity:0;
+}
+
+.e-image-scale img{
+	transform:scale(1.10);
+}

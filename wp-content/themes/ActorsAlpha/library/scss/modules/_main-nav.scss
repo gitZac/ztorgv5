@@ -1,0 +1,53 @@
+.main-nav{
+    display: block;
+    padding:4rem 0;
+    
+    @include respond(phone-land){
+        padding:0;
+        display:none;
+    }
+    
+    &__items{
+        display:table;
+        
+        @include respond(phone-land){
+            display:block;
+        }
+    }
+        
+    &__items li{
+        text-transform:uppercase;
+        display:table-cell;
+        width:1%;
+        vertical-align: middle;
+        border-right: 2px solid $colorPrimaryMid;
+        padding:0 1rem;
+        
+        &:last-child{
+            border-right: none;
+        }
+        
+        @include respond(phone-land){
+            display: block;
+            border-right: none;
+            width: auto;
+            padding: 1rem 0;
+        }
+    }
+
+    &__items li a{
+        color:#0b0c10;
+        
+        @include respond(tab-port){
+            border-right: none;
+        }
+    }
+
+    &__items li a:hover{
+        border-bottom: none;
+    }
+
+    &__items li.current_page_item a{
+        color:#45a29E !important;
+    }
+}

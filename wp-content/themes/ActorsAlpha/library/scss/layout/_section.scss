@@ -1,0 +1,26 @@
+.section{
+    
+    margin-bottom:4rem;
+    overflow:hidden;
+    
+    &__image{
+        margin-bottom: 3rem;
+        
+        img{
+            max-width: 85%;
+            max-height: 50rem;
+        }
+    }
+    
+    &__title{
+       margin-bottom:4rem;
+        
+        &--inner{
+            margin-bottom: 2rem;
+        }
+    }
+    
+    &__title--secondary{
+        margin:4rem 0;
+    }
+}

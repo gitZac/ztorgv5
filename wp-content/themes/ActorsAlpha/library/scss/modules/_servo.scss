@@ -1,0 +1,63 @@
+.servo-box{
+    background-color: rgba($colorWhite, .8);
+    border-radius: .2rem;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
+    transition: transform .3s;
+    position: relative;
+    
+    &--small{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center top;
+        width:100%;
+        position:relative;
+        min-height:27.5rem;
+        margin:1rem 0;
+    }
+   
+    &:hover{
+        transform: translateY(-0.1rem) scale(1.01);    
+    }
+    
+    &__photo{
+        background-blend-mode: overlay;
+        background-size: cover;
+        height:23rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); 
+    }
+    
+    &__title{
+        position: absolute;
+        top:15rem;
+        right:2rem;
+        color:#fff;
+    }
+    
+    &__title-span{
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+
+        padding:.2rem 1.5rem;
+        background-image: linear-gradient(to right bottom, rgba($colorPrimaryLight, .85), rgba($colorPrimaryDark, .85));
+    }
+    
+    &__details{
+        padding:3rem;
+    }
+    
+    &__details ul{
+        width:80%;
+        margin:0 auto;
+        margin-bottom: 1rem;        
+    }
+    
+    &__details li{
+        padding:1rem;
+        border-bottom: 1px solid #eee;  
+    }
+    
+    &__details a{
+        padding:1rem;
+    }
+}

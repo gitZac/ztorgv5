@@ -1,0 +1,29 @@
+.sidebar{
+ 	margin:0 auto;
+	max-width:40rem;
+	min-width:35rem;
+    
+    &__widget-container{
+        margin-bottom:2rem;
+        border-bottom: 1px solid #e5e5e5;
+        padding:1rem;
+        overflow:hidden;
+        
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    
+    &__widget-title{
+        box-shadow:1px 1px 2px #333;
+        padding:2rem;
+        background-color: #202934;
+        background-image:$bg-pattern;
+        color:#fff;
+        margin-bottom:1rem !important;
+    }
+    
+    &__content-block{
+        margin:10px 0;
+    }
+}

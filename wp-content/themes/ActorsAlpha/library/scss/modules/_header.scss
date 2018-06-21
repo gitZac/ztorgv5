@@ -1,0 +1,24 @@
+.header{
+    margin:0;
+    padding:0;
+    
+    &__mobile-nav{
+        padding:20px 0;
+        display:none;
+        
+        @include respond(phone-land){
+            display:block;
+        }
+        
+        &--burgernav i{
+            background:#1c242e;
+            padding:5px;
+            margin: 0 5px;
+            color:#fff;
+        }
+        
+        a:hover{
+            border-bottom: none;
+        }  
+    }
+}

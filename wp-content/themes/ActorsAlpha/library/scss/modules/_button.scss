@@ -1,0 +1,97 @@
+/* BUTTONS */
+.btn{
+	padding: 1.5rem 1.5rem;
+	border: 1px solid transparent;
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	text-transform:uppercase;	
+    border-radius: .2rem;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+    
+    &--master{ //For more prominent hero or jumbo components.
+        padding:2rem 2rem;
+    }
+
+    &--primary{
+        border:2px solid $colorPrimaryDark;
+        background-color:$colorPrimaryDark;
+        color:#fff;
+    /* 	transition: background-color 0.4s, color 0.4s; */
+        font-weight:bold;
+    }
+
+    &--primary:hover{
+        color:#fff;
+        border:2px solid #7f91a6;
+        background-color:#7f91a6;
+    }
+    
+    &--secondary{
+        font-weight:bold;
+        color:$colorTextDark;
+        background-color:$colorPrimaryLight;
+    /* 	transition: background-color 0.4s, color 0.4s; */
+    }
+        
+    &--form{
+        border:none !important;
+        width:35% !important;
+        
+    }
+
+    &--secondary:hover{
+        color:$colorTextDark;
+        background-color:$colorPrimaryLight;
+    }
+        
+    &--text{
+        color: $colorPrimaryMid;
+        display: inline-block;
+        border-bottom: 1px solid $colorPrimaryMid;
+        padding: 3px;
+        -webkit-transition: all .2s;
+        transition: all .2s; 
+    }
+        
+    &--text:hover{
+        background-color: $colorPrimaryMid;
+        color: #fff;
+        -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+
+//WP EXCERPT OVERRIDE
+
+.view-article{
+    color: $colorPrimaryMid;
+    display: inline-block;
+    border-bottom: 1px solid $colorPrimaryMid;
+    padding: 3px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.view-article:hover{
+    background-color: $colorPrimaryMid;
+    color: #fff;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);    
+}

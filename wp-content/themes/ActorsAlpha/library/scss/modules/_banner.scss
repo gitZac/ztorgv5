@@ -1,0 +1,45 @@
+.banner{
+    background-color: $colorPrimary;
+	background-image:$bg-pattern;
+    background-size: 7rem 10.2rem;
+	overflow:hidden;
+    color:#fff;
+    margin-bottom: 4rem;
+    
+    &__text-container{
+        align-items: center;
+    }
+        
+    &__list{
+
+    }
+    
+    &__list-item{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    
+    &__bullet{
+        &::before{
+            background-color: $colorPrimaryLight;
+            content: "";
+            display: inline-block;
+            margin: 2px;
+            padding: 5px;
+            box-shadow: 0 2px 0 0 #000;
+        }
+    }
+    
+    &__image{
+        align-self: flex-end;
+        justify-self: start;
+        
+        @include respond(phone-land){
+            display: none;
+        }
+    }
+    
+    &__image img{
+        box-shadow: none;
+    }
+}

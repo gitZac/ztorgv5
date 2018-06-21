@@ -1,0 +1,12 @@
+.l-wrapper{
+	max-width:120rem;
+	margin:0 auto;
+	overflow:hidden;
+    padding: 0 2rem;
+    
+    &--narrow{
+        max-width:90rem;
+        width:100%;
+        position:relative;
+    }
+}
