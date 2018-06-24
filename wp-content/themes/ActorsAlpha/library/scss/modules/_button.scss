@@ -22,21 +22,31 @@
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
     
     &--master{ //For more prominent hero or jumbo components.
-        padding:2rem 2rem;
+        padding:1.5rem 1.5rem;
     }
 
     &--primary{
-        border:2px solid $colorPrimaryDark;
-        background-color:$colorPrimaryDark;
+        border:2px solid $colorSecondary;
+        background-color:transparent;
         color:#fff;
     /* 	transition: background-color 0.4s, color 0.4s; */
         font-weight:bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
+
+        transition: background-color 0.4s, color 0.4s;
+        transition-property: background-color, color;
+        transition-duration: 0.4s, 0.4s;
+        transition-timing-function: initial, initial;
+        transition-delay: initial, initial;
+    
     }
+    
+    
 
     &--primary:hover{
         color:#fff;
-        border:2px solid #7f91a6;
-        background-color:#7f91a6;
+        border:2px solid $colorSecondary;
+        background-color:$colorSecondary;
     }
     
     &--secondary{

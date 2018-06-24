@@ -1,5 +1,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
+
 	<head>
 	
 		<meta charset="<?php bloginfo('charset'); ?>">
@@ -24,8 +25,28 @@
         </script>
 
 	</head>
+	
 	<body <?php body_class(); ?>>
-        
-        <header class="header clear" role="banner">
+           
+        <nav class="main-nav grid-121-offset">
+           
+            <div class="main-nav__logo">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image">
+            </div>
 
-        </header>
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">About</a></li>
+                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">My Services</a></li>
+                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Portfolio</a></li>
+                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Contact Me</a></li>
+                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Blog</a></li>
+            </ul>
+
+            <ul class="main-nav__social">
+                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">facebook</a></li>
+                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">linkdin</a></li>
+                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">github</a></li>
+            </ul>
+        </nav>
+
+                

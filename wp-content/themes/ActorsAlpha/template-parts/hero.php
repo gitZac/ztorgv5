@@ -1,28 +1,33 @@
-<div class="hero">
 
-	<div class="l-wrapper grid2">
-				
-		<div class="hero__content">
-			<h1 class="header__main"></h1>
-			
-			<ul class="hero__list">
-				<li class="hero__list-item"><span class="hero__list-item-bullet"> Actor</span></li>
-				<li class="hero__list-item"><span class="hero__list-item-bullet"> Director</span></li>
-				<li class="hero__list-item"><span class="hero__list-item-bullet"> Coach</span></li>
-			</ul>
-			
-			<p class="hero__description">Acting, directing and coaching services in Louisville, Kentucky and Southern Indiana.</p>
-			
-			<div class="hero__btn-container">
-			    <a href="" class="btn btn--secondary btn--master">READ MORE</a>
-			</div>
-			
-		</div>
-		
-		<div class="hero__image">
-			
-		</div>
+<?php $args = array(
+        'post_type' => 'hero',							
+        'posts_per_page' => 1,							
+        'orderby' => 'title',
+        'order' => 'ASC',
+    ); ?>
 
-	</div><!--INSIDE CONTAINER -->
-	
-</div><!-- HEADER-BANNER -->
+<?php $hero = new WP_Query($args); while($hero->have_posts()): $hero->the_post(); ?>
+    <div class="l-wrapper">
+<div style="background-image:linear-gradient(to right bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<?php echo get_the_post_thumbnail_url(); ?>);" class="hero hero--vhbg">
+
+
+
+
+        <div class="hero__content">
+
+            <h1 class="hero__title">A Catchy Slogan</h1>
+            <p class="hero__text">Some Catchy Text it. That will blow your damn mind when you read it. Because it's so awesome it makes me want to puke.</p>
+            
+            <div class="hero__btn-container">
+                <a href="#" class="btn btn--master btn--primary">That's What's Up.</a>
+            </div>      
+            
+        </div>
+        
+    </div>
+    
+
+</div><!--HERO-->
+
+
+<?php endwhile; wp_reset_postdata(); ?>

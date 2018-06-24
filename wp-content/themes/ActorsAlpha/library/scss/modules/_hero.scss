@@ -1,53 +1,53 @@
 .hero {
-	background-color: $colorPrimary;
-	background-image:$bg-pattern;
-    background-size: 7rem 10.2rem;
-	overflow:hidden;
+    overflow:hidden;
     color:#fff;
-    margin-bottom: 4rem;
+//    margin-bottom: 4rem;
+
+    height:90vh;
+    background-size: cover;
+    background-position:right bottom;
+    position: relative;
+    margin-top: 5rem;
     
     &__content{
-        padding-left:1rem;
-    }
-
-    &__image{
-        align-self:flex-end;
-        overflow:hidden;
-        
-        & img{
-            width:100%;
-        }
-    }
-
-    &__list{
-        padding: 2rem 0;
-    }
-
-    &__list-item{        
-        margin-right:1rem;
-        display:inline-block;
-    }
-
-    &__list-item-bullet:before{
-        background-color:$colorPrimaryLight;
-        content: "";
-        display: inline-block;
-        margin: .2rem;
-        padding: .5rem;
-        box-shadow: 0 2px 0 0 #000;
-    }
-    
-    &__description{
-        color:$colorGrayMid;
-        padding: 2rem 0;
-        
-        @include respond(phone){
-            
-            display:none;
-        }        
+        position: absolute;
+        top:50%;
+        left:37%;
+        transform: translate(-50%,-50%);
+        text-align: left;
+        padding:0 2rem;
     }
     
     &__btn-container{
-        padding:2rem 0;
+        padding:3rem 0;
+        display: block;
+    }
+    
+    &__title{
+        font-size: 6rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
+        
+        &::after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 27rem;
+            background: $colorSecondary;
+            margin-top: 3rem;
+            margin-bottom: 3rem;   
+        }
+    }
+    
+    &__text{
+        font-size: 2.2rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);  
+
+    }
+    
+    &__text{
+        width:60%;
     }
 }
+
+
+

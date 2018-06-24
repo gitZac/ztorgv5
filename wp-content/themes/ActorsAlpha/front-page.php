@@ -2,7 +2,7 @@
 
 <main role="main">
 
-	<section class="section section--front">
+	<section class="section section--front u-bgcolor-primary">
         <?php get_template_part('template-parts/hero'); ?> 
 	</section>
 
