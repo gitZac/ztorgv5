@@ -7,25 +7,20 @@
     ); ?>
 
 <?php $hero = new WP_Query($args); while($hero->have_posts()): $hero->the_post(); ?>
-    <div class="l-wrapper">
-<div style="background-image:linear-gradient(to right bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<?php echo get_the_post_thumbnail_url(); ?>);" class="hero hero--vhbg">
 
 
-
+    <div style="background-image:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.0)), url(<?php echo get_the_post_thumbnail_url(); ?>);" class="hero hero--vhbg">
 
         <div class="hero__content">
 
-            <h1 class="hero__title">A Catchy Slogan</h1>
-            <p class="hero__text">Some Catchy Text it. That will blow your damn mind when you read it. Because it's so awesome it makes me want to puke.</p>
+            <h1 class="hero__title"><?php the_title(); ?></h1>
+            <p class="hero__text"> <?php echo get_the_content(); ?> </p>
             
             <div class="hero__btn-container">
-                <a href="#" class="btn btn--master btn--primary">That's What's Up.</a>
+                <a href="<?php the_field('hero_button_link'); ?>" class="btn btn--master btn--primary"><?php the_field('hero_button') ?></a>
             </div>      
             
         </div>
-        
-    </div>
-    
 
 </div><!--HERO-->
 

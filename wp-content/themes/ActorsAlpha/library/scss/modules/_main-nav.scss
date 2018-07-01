@@ -1,43 +1,124 @@
 .main-nav{
-    z-index: 1;
     position: fixed;
-    background-color: #fff;
-    border-bottom: 1px solid $colorGrayLight;
-//    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-//    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-//    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-    border-radius: .2rem;
+    width: 100%;
+    background-color: $colorGraySuperLight;
+    z-index: 1000;
+    color:#333;
 
-    &__menu{
-        display: table;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    
+    &__logo-container{
+        text-align: left;
+        position: relative;
+        border-radius: .2rem;
+        
+        @include respond(tab-port){
+            background-color: $colorGraySuperLight;
+        }
     }
     
-    &__menu-item{
-        font-size: 1.8rem;
+    &__logo-image{
+        max-width: 18rem;
+    }
+
+    &__mobile-icon{
+        display: none;
+            
+        @include respond(tab-port){
+            font-size: 2.2rem;
+            display: block;
+            position: absolute;
+            font-size: 4rem;
+            top: 2rem;
+            right: 2rem;
+        }
+        
+        i{
+            background:$colorPrimary;
+            padding:5px;
+            color:#fff;   
+        }
+    }
+    
+    &__menu{
+        display: table;
+        
+        @include respond(tab-port){
+            display: none;
+//            display:block;
+            padding: 0 2rem;
+            border-radius: .2rem;
+        }
+    }
+    
+    &__menu li{
+        font-size: 2rem;    
         display: table-cell;
         width: 1%;
         vertical-align: middle;
-        padding: 0 1rem;
+        padding: 3.3rem 0;
         text-align: center;
+        
+        @include respond(tab-port){
+            display:block;
+            width: 100%;
+            font-size: 3rem;
+            padding:1.5rem 0;
+            font-weight: bold;
+            border-bottom: 1px solid $colorGrayLight;
+            text-align: left;
+            
+           &:last-child{
+                border-bottom: none;
+            }
+        }
+        
+ 
     }
     
-    &__menu-link{
-        color:#333;
+    &__menu li a{
+        color:#333;   
     }
     
     &__social{
+        padding: 3rem 3rem;
         
+        @include respond(tab-port){
+            display: none;
+            text-align: center;
+            font-size: 1.5rem;
+        }
     }
     
-    &__social img{
-        
+    &__social li{
+        margin: 0 .5rem;
+        text-align: center;
+        display: inline;
     }
     
-    &__logo{
-        
+    &__social a{
+        color:$colorPrimary;
     }
     
-    &__logo img{
-        max-width: 15rem;
+    &__social i{
+        font-size: 4em !important;
     }
+}
+
+.current-menu-item{
+    border-bottom: 3px solid $colorPrimary;
+}
+
+.fa-facebook-official:hover{
+    color:#4266b2;
+}
+
+.fa-linkedin-square:hover{
+    color:#0076b5;
+}
+
+.fa-github-square:hover{
+    color:#6e5494;
 }

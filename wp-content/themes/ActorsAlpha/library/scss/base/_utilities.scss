@@ -65,24 +65,29 @@
     color:$colorGrayDark
 }
 
+//******** BACKGROUND COLORS **********
+
 .u-bgcolor-primary{
-    background-color:#32282c;
+    background-color: $colorPrimary;
 }
 
-.u-bgcolor-primary-light{
-    background-color:$colorPrimaryLight;
-}
-
-.u-bgcolor-primary-mid{
-    background-color:$colorPrimaryMid;
+.u-bgcolor-secondary{
+    background-color: $colorSecondary;
 }
 
 .u-bgcolor-graylight{
     background-color: $colorGrayLight;
 }
 
+.u-bgcolor-gradred{
+    @include gradred;
+}
 .u-text-bold, .u-text-bold p{
     font-weight:700;
+}
+
+.u-text-center{
+    text-align: center;
 }
 
 .background-fade{

@@ -28,25 +28,42 @@
 	
 	<body <?php body_class(); ?>>
            
-        <nav class="main-nav grid-121-offset">
+        <nav class="main-nav">
            
-            <div class="main-nav__logo">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image">
+            <div class="l-wrapper">
+               
+                <div class="row">
+                   
+                    <div class="col-1-of-4">
+                       
+                        <div class="main-nav__logo-container">
+                           
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image"> 
+                                  
+                            <div class="main-nav__mobile-icon">
+                                <a href="#" class="main-nav__burgernav"><i class="fa fa-bars"></i></a>
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+                    <div class="col-2-of-4">
+                        <?php html5blank_nav(); ?>
+                    </div>
+                    
+                    <div class="col-1-of-4">
+                       
+                        <div class="main-nav__social">
+                           
+                            <?php html5blank_social(); ?>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
             </div>
 
-            <ul class="main-nav__menu">
-                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">About</a></li>
-                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">My Services</a></li>
-                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Portfolio</a></li>
-                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Contact Me</a></li>
-                <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Blog</a></li>
-            </ul>
-
-            <ul class="main-nav__social">
-                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">facebook</a></li>
-                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">linkdin</a></li>
-                <li class="main-nav__social-item"><a href="#" class="main-nav__social-link">github</a></li>
-            </ul>
         </nav>
-
-                

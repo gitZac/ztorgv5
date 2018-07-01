@@ -30,6 +30,10 @@ h1,h2,h3,h4{
     margin:0; //normalize reset
 }
 
+p{
+    line-height: 145%;
+}
+
 //**************************HEADER-TEXT******************************
 
 .header{
@@ -62,6 +66,7 @@ h1,h2,h3,h4{
     
     &__title{
         font-size:4rem;
+        position: relative;
         
         @include respond(tab-port){
             font-size: 3rem;
@@ -73,6 +78,20 @@ h1,h2,h3,h4{
         }
     }
     
+    &__title:after{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 10%;
+        background-color: #EF3E36;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        position: absolute;
+        top:80%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    
     &__title--secondary{
         font-size:3rem;
         
@@ -81,6 +100,8 @@ h1,h2,h3,h4{
         }
     } 
 }
+
+
 
 //*******************SIDEBAR****************************
 

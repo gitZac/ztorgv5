@@ -14,7 +14,6 @@ $colorGrayLight:#e8e8e8;
 $colorGrayMid:#999;
 $colorGrayDark:#606060;
 
-
 $colorPrimaryMid:#fff;
 $colorPrimaryLight:#fff;
 $bg-pattern:#fff;
@@ -24,7 +23,7 @@ $colorTextMuted:#fff;
 /*------------------------------------*\
     GRID
 \*------------------------------------*/
-$grid-width:114rem;
+$grid-width:120rem;
 $grid-gutter-vertical:1rem;
 
 $grid-gutter-vertical-small:1rem;
@@ -34,3 +33,6 @@ $grid-gutter-horizontal:6rem;
    font-size
 \*------------------------------------*/
 $default-font-size:1.6rem;
+
+
+$gradient-blue-red: linear-gradient(to right, rgba(241,111,92,1) 0%, rgba(0,144,197,1) 0%, rgba(0,144,197,0.95) 34%, rgba(239,64,54,0.89) 72%, rgba(239,64,54,0.85) 100%);
