@@ -409,6 +409,9 @@ ol, ul {
 .u-bgcolor-graylight {
   background-color: #e8e8e8;
 }
+.u-bgcolor-dark {
+  background-color: #333;
+}
 .u-bgcolor-gradred {
   background: rgba(255, 255, 255, 1);
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(239, 64, 54, 1) 0%, rgba(239, 64, 54, 0.75) 100%);
@@ -929,8 +932,66 @@ a img.aligncenter {
 .feature:hover:after {
   background-color: rgba(0, 0, 0, .9);
 }
-.feat-proj h1 {
-  color: red;
+.feat-proj {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 2.5rem);
+  grid-gap: 1rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.feat-proj__background {
+  background-color: #333;
+  grid-column: 3 / span 4;
+  grid-row: 1 / span 7;
+}
+.feat-proj__image-container {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 6;
+  min-height: 20rem;
+}
+.feat-proj__image {
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.feat-proj__text-container {
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 6;
+  color: #fff;
+  padding: 0 2rem;
+  display: grid;
+}
+.feat-proj__logo-cont {
+  min-height: 5rem;
+  align-self: flex-end;
+}
+.feat-proj__logo-image {
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.feat-proj__logo-text {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1rem;
+  vertical-align: top;
+}
+.feat-proj__title {
+  font-size: 2.2rem;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  align-self: center;
+}
+.feat-proj__txt-link {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  align-self: flex-start;
+}
+.feat-proj__icon {
+  margin-left: 1rem;
+  font-weight: normal;
 }
 .footer {
   padding: 8rem;
@@ -1410,12 +1471,6 @@ a img.aligncenter {
 .grid-auto--short {
   grid-template-columns: repeat(auto, 1fr);
   justify-content: center;
-}
-.grid-nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  grid-gap: 1rem;
-  align-items: center;
 }
 .grid-121-offset {
   display: grid;

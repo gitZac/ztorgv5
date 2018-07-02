@@ -79,6 +79,10 @@
     background-color: $colorGrayLight;
 }
 
+.u-bgcolor-dark{
+    background-color: #333;
+}
+
 .u-bgcolor-gradred{
     @include gradred;
 }

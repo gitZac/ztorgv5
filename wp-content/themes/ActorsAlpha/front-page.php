@@ -26,9 +26,7 @@
 
 	<section class="section section--front">
         
-        <div class="l-wrapper">
-            <?php get_template_part('template-parts/featured-project'); ?>
-        </div>
+        <?php get_template_part('template-parts/featured-project'); ?>
 
 	</section>
 	

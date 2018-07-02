@@ -86,6 +86,10 @@
     }
 }
 
+.l-grid-section{ //An optional grid for full width sections.
+
+}
+
 .grid-auto{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -96,13 +100,6 @@
         grid-template-columns: repeat(auto,1fr);
         justify-content: center;
     }
-}
-
-.grid-nav{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-    grid-gap: 1rem;
-    align-items: center;
 }
 
 .grid-121-offset{
