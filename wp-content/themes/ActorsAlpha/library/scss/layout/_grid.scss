@@ -97,7 +97,7 @@
     align-items: center;
     
     &--short{
-        grid-template-columns: repeat(auto,1fr);
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
         justify-content: center;
     }
 }

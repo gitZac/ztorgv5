@@ -1,5 +1,8 @@
-<div class="feat-proj">
-   
+<h2 class="section__title--inner u-text-center">Featured Project</h2>
+
+ <div class="feat-proj">
+  
+
     <div class="feat-proj__background"></div>
     
     <div class="feat-proj__image-container">
@@ -11,7 +14,7 @@
     <div class="feat-proj__text-container">
         
         <div class="feat-proj__logo-cont">
-            <img class="feat-proj__logo-image" src="http://via.placeholder.com/100x50" alt="">
+            <img class="feat-proj__logo-image" src="http://via.placeholder.com/150x150" alt="">
             <p class="feat-proj__logo-text">Goarmy.com</p>
         </div>
         

@@ -111,13 +111,62 @@ function html5blank_social()
 	);
 }
 
+function html5blank_footer()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'footer-menu',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<ul class="footer__menu-content grid-auto">%3$s</ul>',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
+
+function html5blank_footer_social()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'footer-social',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<ul class="footer__social-content grid-auto grid-auto--short">%3$s</ul>',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
 
 // Register HTML5 Blank Navigation
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'social-menu' => __('Social Menu', 'html5blank'), // Main Navigation
+        'social-menu' => __('Social Menu', 'html5blank'), // Social Navigation
+        'footer-menu' => __('Footer Menu', 'html5blank'), // Footer Menu
+        'footer-social' => __('Footer Social Icons', 'html5blank'), // Footer Menu
     ));
 }
 

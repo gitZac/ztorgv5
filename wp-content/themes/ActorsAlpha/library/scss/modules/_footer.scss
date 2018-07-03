@@ -1,6 +1,6 @@
 .footer{
     padding: 8rem;
-    background-color: $colorPrimary;
+    background-color: #013D47;
     
     &__menu-content{
         ul{
@@ -10,12 +10,17 @@
     
     &__social-content{
         padding:5rem 0;
+        text-align: center;
     }
     
     &__copyright-content{
         color:#fff;
         padding:5rem 0;
     }
+}
+
+.footer .menu-item i._mi{
+    font-size: 2em;
 }
 
 .footer__menu-content .menu-item a:link,
