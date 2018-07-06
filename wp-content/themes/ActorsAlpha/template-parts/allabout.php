@@ -1,9 +1,9 @@
 <?php $args = array(
-        'post_type' => 'allabout',							
-        'posts_per_page' => 1,							
-        'orderby' => 'title',
-        'order' => 'ASC',
-    ); ?>
+    'post_type' => 'allabout',							
+    'posts_per_page' => 1,							
+    'orderby' => 'title',
+    'order' => 'ASC',
+); ?>
 
 <?php $allabout = new WP_Query($args); while($allabout->have_posts()): $allabout->the_post(); ?>
 

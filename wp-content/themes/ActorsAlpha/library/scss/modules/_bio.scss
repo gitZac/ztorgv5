@@ -1,5 +1,8 @@
 .bio{
     display:block;
+    max-width: 60rem;
+    margin: 0 auto;
+
     
     &__image{
         float:left;
@@ -31,7 +34,6 @@
         
     &__content p{
             margin: 1rem 0;
-            max-width: 60rem;
             
             @include respond (tab-port){
                 max-width: 50rem;

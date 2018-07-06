@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html <?php language_attributes(); ?> class="no-js">
 
 	<head>
@@ -26,44 +27,45 @@
 
 	</head>
 	
-	<body <?php body_class(); ?>>
-           
-        <nav class="main-nav">
-           
-            <div class="l-wrapper">
-               
-                <div class="row">
-                   
-                    <div class="col-1-of-4">
-                       
-                        <div class="main-nav__logo-container">
-                           
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image"> 
-                                  
-                            <div class="main-nav__mobile-icon">
-                                <a href="#" class="main-nav__burgernav"><i class="fa fa-bars"></i></a>
-                            </div>
-    
-                        </div>
+<body <?php body_class(); ?>>
 
+<header class="main-nav">
+
+    <div class="l-wrapper">
+
+        <div class="row">
+
+            <div class="col-1-of-4">
+
+                <div class="main-nav__logo-container">
+                    
+                    <a href="http://localhost:8888/ztorg_v5.1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/digitalzac.com_logo2.png" alt="digitalzac.com -- Custom web design, content writing and SEO." class="main-nav__logo-image"></a> 
+
+                    <div class="main-nav__mobile-icon">
+                        <a href="#" class="main-nav__burgernav"><i class="fa fa-bars"></i></a>
                     </div>
 
-                    <div class="col-2-of-4">
-                        <?php html5blank_nav(); ?>
-                    </div>
-                    
-                    <div class="col-1-of-4">
-                       
-                        <div class="main-nav__social">
-                           
-                            <?php html5blank_social(); ?>
-                            
-                        </div>
-                        
-                    </div>
-                    
                 </div>
-                
+
             </div>
 
-        </nav>
+            <div class="col-2-of-4">
+                <?php html5blank_nav(); ?>
+            </div>
+
+            <div class="col-1-of-4">
+
+                <div class="main-nav__social">
+
+                    <?php html5blank_social(); ?>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+	

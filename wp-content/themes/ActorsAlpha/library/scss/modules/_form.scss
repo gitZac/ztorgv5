@@ -1,14 +1,15 @@
-.wpcf7{
+div.wpcf7{
+    width:50%;
+    margin:0 auto;
     
     .field{
         margin-bottom: 20px;
-        max-width: 85%;
     }
     
     input, textarea{
-        width:100%;
-        border: 3px solid $colorPrimaryDark;
+        border: 3px solid $colorPrimary;
         border-radius: .2rem;
         padding: 15px 10px;
+        width:100%;
     }
 }

@@ -23,20 +23,9 @@
 }
 //PADDING
 
-//DISPLAY
-.u-d-iblock{
-    display: inline-block;
-}
 
-.u-a-flxend{
-    align-self: flex-end;
-}
 
-.clear-fix{
-	clear:both;
-}
-
-//COLOR
+//********  COLORS **********
 .u-color-primary{
     color:$colorPrimary;
 }
@@ -86,17 +75,12 @@
 .u-bgcolor-gradred{
     @include gradred;
 }
-.u-text-bold, .u-text-bold p{
-    font-weight:700;
-}
-
-.u-text-center{
-    text-align: center;
-}
 
 .background-fade{
 	background-color:#aac2ce;
 }
+
+//******** EFFECTS **********
 
 .e-overlay-fade{
   background: rgba(0,0,0,0.5);
@@ -110,4 +94,30 @@
 
 .e-image-scale img{
 	transform:scale(1.10);
+}
+
+//********FORMATTING**********
+
+.u-text-center{
+    text-align: center;
+}
+
+.u-text-bold, .u-text-bold p{
+    font-weight:700;
+}
+
+.u-padding-top-15{
+    padding-top: 15rem;
+}
+
+.u-d-iblock{
+    display: inline-block;
+}
+
+.u-a-flxend{
+    align-self: flex-end;
+}
+
+.clear-fix{
+	clear:both;
 }

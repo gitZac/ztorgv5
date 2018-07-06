@@ -11,25 +11,14 @@
 	<section class="section section--front">
         
         <div class="l-wrapper">
+           
             <?php get_template_part('template-parts/allabout'); ?>
+            
         </div>
 
 	</section>
 	
-	<section class="section section--front u-bgcolor-gradred">
-    
-	    <div class="l-wrapper">
-            <?php get_template_part('template-parts/promo'); ?>	
-	    </div>
-		    
-	</section>
-
-	<section class="section section--front">
-        
-        <?php get_template_part('template-parts/featured-project'); ?>
-
-	</section>
-	
+    <?php get_template_part('template-parts/promos/contracting'); ?>		
 </main>
 
 <?php get_footer(); ?>
