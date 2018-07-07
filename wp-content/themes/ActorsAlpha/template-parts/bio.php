@@ -1,4 +1,6 @@
   <?php //$abt_page_data = new WP_Query('page_id=7'); while($abt_page_data->have_posts()): $abt_page_data->the_post(); ?>
+  
+<section class="section">
 
    <div class="bio">
       
@@ -12,6 +14,7 @@
         </div>
        
    </div>
-
+   
+</section>
 
   <?php// endwhile; wp_reset_postdata(); ?>

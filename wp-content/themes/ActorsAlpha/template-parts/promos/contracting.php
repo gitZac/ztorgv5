@@ -41,5 +41,4 @@
 
 </section>
 
-
 <?php endwhile; wp_reset_postdata(); ?>

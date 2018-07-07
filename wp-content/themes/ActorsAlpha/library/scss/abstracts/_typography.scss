@@ -37,7 +37,11 @@ p{
 //**************************HEADERTEXT******************************
 
 .header{
-
+    
+    padding: 8rem 0 !important;
+    background-color:rgba(0,144,197,0.1);
+    
+    
     &__main{ //h1 Front Page
         
         font-size:6.5rem;
@@ -55,7 +59,7 @@ p{
     }
     
     &__page-title{ //h1 -- inside pages
-        font-size: 5rem;
+        font-size: 7rem;
         margin-bottom: 3rem;
         position: relative;
         
@@ -64,7 +68,7 @@ p{
             display: block;
             height: 3px;
             width: 10%;
-            background-color: #EF3E36;
+            background-color: #0090c5;
             margin-top: 3rem;
             margin-bottom: 3rem;
             position: absolute;

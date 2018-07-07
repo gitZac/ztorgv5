@@ -7,6 +7,9 @@
         <?php get_template_part('template-parts/hero'); ?> 
         
 	</section>
+	
+
+	
 
 	<section class="section section--front">
         
