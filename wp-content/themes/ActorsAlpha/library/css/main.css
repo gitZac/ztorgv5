@@ -1315,7 +1315,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 .promo__text-container {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  margin-left: 10rem;
 }
 .promo__title {
   font-size: 3.6rem;
@@ -1323,7 +1322,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .promo__text {
   font-size: 1.8rem;
-  margin-top: 1rem;
   max-width: 80%;
   line-height: 145%;
 }
@@ -1333,7 +1331,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 .promo__button-container--center {
   margin: 0 auto;
   width: 25%;
-  padding-top: 4rem;
 }
 .promo__btn-text {
   font-size: 2.2rem;
@@ -1346,11 +1343,15 @@ div.wpcf7 input, div.wpcf7 textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.2rem;
+  background-color: #333;
 }
 .services__card {
   padding: 5rem 5rem;
   color: #fff;
   min-height: 45rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -1359,6 +1360,17 @@ div.wpcf7 input, div.wpcf7 textarea {
   position: relative;
   margin-bottom: 2rem;
   text-align: center;
+}
+.services__title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 30%;
+  background-color: #ef3e36;
+  margin-top: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .services__description {
   font-size: 1.8rem;
