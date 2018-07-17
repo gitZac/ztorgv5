@@ -1,7 +1,7 @@
 .promo{
     
     max-width: 100rem;
-    padding: 5rem 0;
+    padding: 3rem 0;
     margin: 0 auto;
     
     &__text-container{
@@ -11,12 +11,18 @@
     
     &__title{
         font-size: 3.6rem;
+        margin-bottom: 1rem;
         line-height: 145%;
+    }
+    
+    &__title--large{
+        font-size: 4rem;
+        margin-bottom: 2rem;
     }
     
     &__text{
         font-size: 1.8rem; 
-        max-width: 80%;
+        max-width: 95%;
         line-height: 145%;
     }
     

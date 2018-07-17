@@ -8,9 +8,6 @@
         
 	</section>
 	
-
-	
-
 	<section class="section section--front">
         
         <div class="l-wrapper">
@@ -21,7 +18,6 @@
 
 	</section>
 	
-    <?php get_template_part('template-parts/promos/contracting'); ?>		
 </main>
 
 <?php get_footer(); ?>

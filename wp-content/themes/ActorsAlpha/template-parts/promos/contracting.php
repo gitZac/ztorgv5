@@ -8,7 +8,7 @@
 
 <?php $promo = new WP_Query($args); while($promo->have_posts()): $promo->the_post(); ?>
 
-<section class="section u-bgcolor-gradred">
+<section class="section u-bgcolor-gradblack">
   
    <div class="l-wrapper">
     
@@ -28,7 +28,7 @@
                <div class="col-1-of-3">
 
                   <div class="promo__button-container">
-                        <a href="<?php the_field('button_link'); ?>" class="btn btn--white btn--medium btn--darktext"><?php the_field('button_text'); ?></a>
+                        <a href="<?php the_field('button_link'); ?>" class="btn btn--white btn--master btn--darktext promo__btn-text"><?php the_field('button_text'); ?></a>
                   </div>
 
                </div>

@@ -1,5 +1,10 @@
 .section{
     overflow:hidden;
+    margin-bottom: 5rem;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
     
     &__image{
         margin-bottom: 3rem;

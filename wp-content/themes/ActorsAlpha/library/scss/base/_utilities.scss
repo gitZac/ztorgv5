@@ -21,9 +21,6 @@
         margin-top: 0;
     }
 }
-//PADDING
-
-
 
 //********  COLORS **********
 .u-color-primary{
@@ -74,6 +71,10 @@
 
 .u-bgcolor-gradred{
     @include gradred;
+}
+
+.u-bgcolor-gradblack{
+    @include gradblack;
 }
 
 .background-fade{

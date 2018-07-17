@@ -1,0 +1,33 @@
+.port{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    &__card{
+        
+    }
+    
+    &__card--fw{
+        grid-column: 1 / span 2;
+    }
+    
+    &__content-container{
+        
+    }
+    
+    &__logo{
+    
+    }
+    
+    &__title{
+        
+    }
+    
+    &__sub{
+        
+    }
+    
+    &__description{
+        
+    }
+
+}

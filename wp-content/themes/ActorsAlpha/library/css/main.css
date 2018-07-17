@@ -443,6 +443,12 @@ ol, ul {
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(239, 64, 54, 1) 0%, rgba(239, 64, 54, 0.75) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ef4036', GradientType=1);
 }
+.u-bgcolor-gradblack {
+  background: #333;
+  background: -webkit-linear-gradient(left, rgba(51, 51, 51, 1) 0%, rgba(83, 83, 83, 1) 75%, rgba(111, 111, 111, 1) 100%);
+  background: -o-linear-gradient(left, rgba(51, 51, 51, 1) 0%, rgba(83, 83, 83, 1) 75%, rgba(111, 111, 111, 1) 100%);
+  background: linear-gradient(to right, rgba(51, 51, 51, 1) 0%, rgba(83, 83, 83, 1) 75%, rgba(111, 111, 111, 1) 100%);
+}
 .background-fade {
   background-color: #aac2ce;
 }
@@ -1307,9 +1313,16 @@ div.wpcf7 input, div.wpcf7 textarea {
 .fa-github-square:hover {
   color: #6e5494;
 }
+.port {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.port__card--fw {
+  grid-column: 1 / span 2;
+}
 .promo {
   max-width: 100rem;
-  padding: 5rem 0;
+  padding: 3rem 0;
   margin: 0 auto;
 }
 .promo__text-container {
@@ -1318,11 +1331,16 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .promo__title {
   font-size: 3.6rem;
+  margin-bottom: 1rem;
   line-height: 145%;
+}
+.promo__title--large {
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .promo__text {
   font-size: 1.8rem;
-  max-width: 80%;
+  max-width: 95%;
   line-height: 145%;
 }
 .promo__button-container {
@@ -1614,6 +1632,10 @@ footer .l-grid1-3 {
 }
 .section {
   overflow: hidden;
+  margin-bottom: 5rem;
+}
+.section:last-child {
+  margin-bottom: 0;
 }
 .section__image {
   margin-bottom: 3rem;
