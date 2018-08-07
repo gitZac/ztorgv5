@@ -38,49 +38,6 @@ h1, h2, h3, h4 {
 p {
   line-height: 145%;
 }
-.header {
-  padding: 8rem 0 !important;
-  background-color: rgba(0, 144, 197, 0.1);
-}
-.header__main {
-  font-size: 6.5rem;
-  margin-bottom: 0px;
-  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-}
-@media (max-width: 56.25em) {
-  .header__main {
-    font-size: 7rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .header__main {
-    font-size: 4rem;
-  }
-}
-.header__page-title {
-  font-size: 7rem;
-  margin-bottom: 3rem;
-  position: relative;
-}
-.header__page-title:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 10%;
-  background-color: #0090c5;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.header__text {
-  font-size: 2.2rem;
-  padding-top: 1rem;
-  width: 80%;
-  margin: 0 auto;
-}
 .section__title {
   font-size: 4rem;
   position: relative;
@@ -384,9 +341,15 @@ ol, ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.u-no-t-margin {
+  margin-top: 0 !important;
+}
 .u-tb-margin-20 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.u-width-100 {
+  width: 100%;
 }
 .u-tb-padding-40 {
   padding-top: 4rem;
@@ -611,6 +574,7 @@ a img.aligncenter {
 }
 .allabout {
   text-align: center;
+  padding: 2rem 0;
 }
 .allabout__content-container {
   padding: 2rem 0;
@@ -1101,27 +1065,50 @@ div.wpcf7 input, div.wpcf7 textarea {
   padding: 15px 10px;
   width: 100%;
 }
+#wpcf7-f506-o1 {
+  width: 100%;
+}
 .header {
-  margin: 0;
-  padding: 0;
+  padding: 8rem 0 !important;
 }
-.header__mobile-nav {
-  padding: 20px 0;
-  display: none;
+.header__main {
+  font-size: 6.5rem;
+  margin-bottom: 0px;
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
-@media (max-width: 43.75em) {
-  .header__mobile-nav {
-    display: block;
+@media (max-width: 56.25em) {
+  .header__main {
+    font-size: 7rem;
   }
 }
-.header__mobile-nav--burgernav i {
-  background: #1c242e;
-  padding: 5px;
-  margin: 0 5px;
-  color: #fff;
+@media (max-width: 37.5em) {
+  .header__main {
+    font-size: 4rem;
+  }
 }
-.header__mobile-nav a:hover {
-  border-bottom: none;
+.header__page-title {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.header__page-title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 10%;
+  background-color: #0090c5;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__text {
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
 .hero {
   overflow: hidden;
@@ -1316,9 +1303,65 @@ div.wpcf7 input, div.wpcf7 textarea {
 .port {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.1rem;
+  color: #fff;
+}
+.port__card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.port__logo {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  padding-right: 1rem;
+}
+.port__title {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 2;
+  font-size: 3rem;
+  line-height: 145%;
+  padding-top: 1rem;
+}
+.port__plist {
+  grid-column: 3 / span 3;
+  grid-row: 2 / span 1;
+  font-size: 1.8rem;
+}
+.port__plist-item {
+  display: inline;
+}
+.port__btn-container {
+  grid-column: 2 / span 2;
+  grid-row: 5 / span 1;
 }
 .port__card--fw {
   grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.port__title--fw {
+  font-size: 3rem;
+  line-height: 145%;
+  padding-top: 1rem;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
+.port__logo--fw {
+  grid-column: 2 / span 1;
+  grid-row: 2/ span 1;
+}
+.port__plist--fw {
+  grid-column: 4 / span 2;
+  grid-row: 2/ span 1;
+  font-size: 1.8rem;
+}
+.port__plist-item--fw {
+  display: inline;
 }
 .promo {
   max-width: 100rem;
@@ -1490,8 +1533,7 @@ div.wpcf7 input, div.wpcf7 textarea {
   color: #e8e8e8;
 }
 .text-block {
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 .text-block__title {
   font-size: 2.2rem;
@@ -1567,15 +1609,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
-.bg-red {
-  background-color: orangered;
-}
-.bg-green {
-  background-color: palegreen;
-}
-.padding100 {
-  padding: 2rem;
-}
 .l-grid-main {
   display: grid;
   grid-template-columns: 2fr 0.9fr;
@@ -1632,7 +1665,6 @@ footer .l-grid1-3 {
 }
 .section {
   overflow: hidden;
-  margin-bottom: 5rem;
 }
 .section:last-child {
   margin-bottom: 0;
@@ -1645,10 +1677,10 @@ footer .l-grid1-3 {
   max-height: 50rem;
 }
 .section__title {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 .section__title--inner {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .section__title--secondary {
   margin: 4rem 0;

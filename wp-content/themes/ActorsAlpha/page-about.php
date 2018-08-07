@@ -11,7 +11,8 @@
 
     <?php get_template_part('template-parts/bio') ?>
         
-    <?php get_template_part('template-parts/promos/contracting'); ?>		
+    <?php get_template_part('template-parts/promos/contracting'); ?>	
+    	
     <?php get_template_part('template-parts/about/text-blocks') ?>
     
     <?php get_template_part('template-parts/featured-project'); ?>

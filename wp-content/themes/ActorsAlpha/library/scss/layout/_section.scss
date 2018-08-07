@@ -1,6 +1,5 @@
 .section{
     overflow:hidden;
-    margin-bottom: 5rem;
     
     &:last-child{
         margin-bottom: 0;
@@ -16,10 +15,10 @@
     }
     
     &__title{
-       margin-bottom:4rem;
+       margin:4rem 0;
         
         &--inner{
-            margin-bottom: 2rem;
+            margin: 2rem 0;
         }
     }
     

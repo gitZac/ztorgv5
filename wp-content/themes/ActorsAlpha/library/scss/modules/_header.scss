@@ -1,24 +1,46 @@
 .header{
-    margin:0;
-    padding:0;
+
+    padding: 8rem 0 !important;
+        
+    &__main{ //h1 Front Page
+        
+        font-size:6.5rem;
+        margin-bottom:0px;
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+        
+        @include respond(tab-port){
+            font-size: 7rem;
+        }
+        
+        @include respond(phone){
+            font-size: 4rem;
+        }   
+    }
     
-    &__mobile-nav{
-        padding:20px 0;
-        display:none;
+    &__page-title{ //h1 -- inside pages
+        font-size: 7rem;
+        margin-bottom: 3rem;
+        position: relative;
         
-        @include respond(phone-land){
-            display:block;
+        &:after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 10%;
+            background-color: #0090c5;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            position: absolute;
+            top:80%;
+            left:50%;
+            transform: translate(-50%,-50%);
         }
-        
-        &--burgernav i{
-            background:#1c242e;
-            padding:5px;
-            margin: 0 5px;
-            color:#fff;
-        }
-        
-        a:hover{
-            border-bottom: none;
-        }  
+    }
+    
+    &__text{
+        font-size: 2.2rem;
+        padding-top: 1rem;
+        width:80%;
+        margin:0 auto;
     }
 }
