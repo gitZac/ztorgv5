@@ -11,7 +11,7 @@
        
         <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); ?>
 
-            <div class="services__card" style="background-image:linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(<?php echo get_the_post_thumbnail_url(); ?>);">
+            <div class="services__card" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
 
                 <div class="services__content">
 

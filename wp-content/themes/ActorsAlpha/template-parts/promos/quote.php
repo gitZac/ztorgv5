@@ -14,7 +14,7 @@
 
         <div class="promo">
            
-            <h4 class="promo__title promo__title--large u-text-center"><?php the_field('title'); ?></h4>
+            <h4 class="promo__title promo__title--large promo__title--scale u-text-center wp-contracting"><?php the_field('title'); ?></h4>
             
             <div class="promo__button-container--center">
                 <a href="<?php the_field('button_link'); ?>" class="btn btn--secondary btn--master btn--darktext promo__btn-text"><?php the_field('button_text'); ?></a>     

@@ -1,3 +1,65 @@
+.e-fade-in-top {
+  animation-name: fadeInTop;
+  animation-duration: 1.3s;
+}
+.e-fade-in-bottom {
+  animation-name: fadeInBottom;
+  animation-duration: 1.3s;
+}
+.e-scale-up-center {
+  -webkit-animation: scaleUpCenter 1.2s ease-in-out both;
+  animation: scaleUpCenter 1.2s ease-in-out both;
+}
+/**
+ * ----------------------------------------
+ * Fades
+ * ----------------------------------------
+ */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/**
+ * ----------------------------------------
+ * scales
+ * ----------------------------------------
+ */
+@-webkit-keyframes scaleUpCenter {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scaleUpCenter {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 /* 
  0-600 : Phone
  600 - 700 : Phone - Landscape
@@ -1381,6 +1443,10 @@ div.wpcf7 input, div.wpcf7 textarea {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+.promo__title--scale {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
 .promo__text {
   font-size: 1.8rem;
   max-width: 95%;
@@ -1415,12 +1481,44 @@ div.wpcf7 input, div.wpcf7 textarea {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.services__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.5s ease-in-out;
+}
+.services__card:hover {
+  cursor: pointer;
+}
+.services__card:hover .services__title {
+  color: #ef3e36;
+}
+.services__card:hover:after {
+  background-color: rgba(0, 0, 0, .95);
+}
+.services__content {
+  z-index: 1;
 }
 .services__title {
   font-size: 4rem;
   position: relative;
   margin-bottom: 2rem;
   text-align: center;
+  transition: color 0.4s, color 0.4s;
+  transition-property: color, color;
+  transition-duration: 0.7s, 0.7s;
+  transition-timing-function: initial, initial;
+  transition-delay: initial, initial;
+  animation-name: fadeInTop;
+  animation-duration: 1.3s;
 }
 .services__title:after {
   content: "";
@@ -1438,10 +1536,12 @@ div.wpcf7 input, div.wpcf7 textarea {
   line-height: 145%;
   margin-bottom: 3rem;
   text-align: center;
+  animation-name: fadeInBottom;
+  animation-duration: 1.3s;
 }
 .services__link {
   font-size: 1.8rem;
-  color: #fff;
+  color: #ec7a75;
   text-align: center;
   display: block;
 }

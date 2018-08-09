@@ -20,6 +20,11 @@
         margin-bottom: 2rem;
     }
     
+    &__title--scale{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    
     &__text{
         font-size: 1.8rem; 
         max-width: 95%;
