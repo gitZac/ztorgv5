@@ -12,7 +12,7 @@
         
         <?php $scrapbook = new WP_Query($args); while($scrapbook->have_posts()): $scrapbook->the_post(); ?>
 
-        <div class="port__card" style="background-image:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(<?php echo get_the_post_thumbnail_url(); ?>);">
+        <div class="port__card" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
 
             <h2 class="port__title"><?php the_title(); ?></h2>
             
@@ -40,16 +40,19 @@
             <ul class="port__plist">
 
                <?php foreach ($servs as $serv): ?>
-                   <li class="port__plist-item"><?php echo $serv; ?> |</li>
+                   <li class="port__plist-item"><?php echo $serv; ?> </li>
                 <?php endforeach; ?>
 
             </ul>
             
             <?php endif; ?>
-            <div class="port__btn-container">
-                <a href="#" class="btn btn--primary">View Project</a>
-            </div>
 
+            <div class="port__btn-container">
+               
+                <a href="" class="btn--text">Learn More<i class="feat-proj__icon fa fa-arrow-right"></i></a>
+                
+            </div>
+            
         </div>
         
         <?php endwhile; wp_reset_postdata(); ?>    

@@ -7,7 +7,7 @@
 
 <?php $allabout = new WP_Query($args); while($allabout->have_posts()): $allabout->the_post(); ?>
 
-<div class="allabout">
+<div class="allabout wp-allabout">
    
     <h2 class="section__title u-text-center"><?php the_title(); ?></h2>
     

@@ -13,8 +13,8 @@
 
         <div class="hero__content">
 
-            <h1 class="hero__title"><?php the_title(); ?></h1>
-            <p class="hero__text"> <?php echo get_the_content(); ?> </p>
+            <h1 class="hero__title e-fade-in-top"><?php the_title(); ?></h1>
+            <p class="hero__text e-fade-in-bottom"> <?php echo get_the_content(); ?> </p>
             
             <div class="hero__btn-container">
                 <a href="<?php the_field('hero_button_link'); ?>" class="btn btn--master btn--primary"><?php the_field('hero_button') ?></a>

@@ -16,10 +16,7 @@
     <?php get_template_part('template-parts/about/text-blocks') ?>
     
     <?php get_template_part('template-parts/featured-project'); ?>
-    
-    <?php get_template_part('template-parts/forms/resume'); ?>
 
-    <?php get_template_part('template-parts/promos/vr'); ?>	
                     
 </main>
 
