@@ -60,25 +60,3 @@
     </div>
     
 </section>
-
-<!--
-       
-       Can't figure out how to implement a full-width potfolio dynamically yet. Will have to come back to it.
-        <div class="port__card--fw u-bgcolor-gradblack">
-           
-            <h2 class="port__title--fw">Title of Project. This is a long descriptive title. This is even longer</h2>
-            
-            <div class="port__logo--fw">
-                <img class="port__logo-image" src="http://via.placeholder.com/150x75" alt="">
-            </div>
-            
-            <ul class="port__plist--fw">
-               
-                <li class="port__plist-item--fw">SEO</li>
-                <li class="port__plist-item--fw">Content Writing</li>
-                <li class="port__plist-item--fw">Web Dev</li>
-                
-            </ul>
-            
-        </div>
--->
