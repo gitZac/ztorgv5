@@ -4,8 +4,12 @@
 }
 
 .e-fade-in-bottom{
+    opacity: 0;
     animation-name:fadeInBottom;
     animation-duration: 1.3s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+
 }
 
 .e-scale-up-center {

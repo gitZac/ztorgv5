@@ -1,6 +1,6 @@
 .header{
 
-    padding: 8rem 0 !important;
+    padding: 6rem 0 2rem 0 !important;
         
     &__main{ //h1 Front Page
         
@@ -21,6 +21,7 @@
         font-size: 7rem;
         margin-bottom: 3rem;
         position: relative;
+        font-weight: 100;
         
         &:after{
             content: "";
@@ -37,10 +38,18 @@
         }
     }
     
-    &__text{
-        font-size: 2.2rem;
-        padding-top: 1rem;
-        width:80%;
+    &__text-container p, &__text-container ul{
+        font-size: 2rem;
+        padding-top: 2rem;
+        max-width:96rem;
         margin:0 auto;
+        list-style: circle;
+    }
+    
+    &__text-container ul{
+        padding-left:5rem;
+    }
+    &__text-container li{
+        line-height: 145%;
     }
 }

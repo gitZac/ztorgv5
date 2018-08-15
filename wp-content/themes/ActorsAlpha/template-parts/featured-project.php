@@ -5,13 +5,6 @@
     'order' => 'ASC',
 ); ?>
 
-
-
-
-
-
-
-        
 <section class="section">
    
     <?php $scrapbook = new WP_Query($args); while($scrapbook->have_posts()): $scrapbook->the_post(); ?>
