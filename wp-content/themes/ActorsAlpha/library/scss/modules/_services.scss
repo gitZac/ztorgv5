@@ -2,7 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: .2rem;
-    background-color:#333;
+    
+    @include respond(tab-port){
+        grid-template-columns: 1fr;
+        max-width: 60rem;
+        margin:0 auto;
+    }
         
     &__card{
         padding:5rem 5rem;
@@ -43,7 +48,7 @@
     }
     
     &__content{
-        z-index: 1;
+        z-index: 10;
     }
         
     &__title{
@@ -85,9 +90,10 @@
     }
     
     &__link{   
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         color:#ec7a75;
         text-align: center;
         display: block;
+        font-weight: bold;
     }
 }

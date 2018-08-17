@@ -11,8 +11,6 @@
     <?php get_template_part('template-parts/page-intro'); ?>
     
     <?php get_template_part('template-parts/forms/contact'); ?>
-
-    <?php get_template_part('template-parts/featured-project'); ?>
     
 </main>
 
