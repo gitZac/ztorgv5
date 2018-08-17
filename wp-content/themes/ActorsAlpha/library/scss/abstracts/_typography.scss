@@ -35,8 +35,6 @@ p{
 }
 
 
-//TESTING for refactor.
-
 .header{
     color:#000;
     
@@ -69,7 +67,7 @@ p{
         }        
     }
     
-    &--xlarge{ //For 
+    &--xlarge{ //For front page and landing pages
         font-size:6.5rem;
         margin-bottom:0px;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -83,6 +81,29 @@ p{
         }        
     }
 }
+
+//TO BE REFACTORED **********
+
+.header{
+        
+    &__main{ //h1 Front Page
+        
+        font-size:6.5rem;
+        margin-bottom:0px;
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+        
+        @include respond(tab-port){
+            font-size: 7rem;
+        }
+        
+        @include respond(phone){
+            font-size: 4rem;
+        }   
+    }
+}
+
+//TO BE REFACTORED **********
+
 
 //*******************SECTION****************************
 
