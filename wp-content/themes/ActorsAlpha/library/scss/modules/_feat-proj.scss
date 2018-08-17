@@ -8,21 +8,20 @@
     max-width: 120rem;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
     
     &__background{
         background-color: #333;
-       
         grid-column: 3 / span 4;
-        grid-row: 1 / span 7;
+        grid-row: 1 / span 8;
+        box-shadow: 1px 1px 2px;
     }
     
     &__image-container{
         grid-column: 2 / span 2;
         grid-row: 3 / span 5;
         overflow: hidden;
-        max-height: 15rem;
-        
+        max-height: 15rem;   
     }
     
     &__image{
@@ -40,7 +39,6 @@
     }
     
     &__logo-cont{
-        min-height: 5rem;
         align-self: flex-end;
     }
     
@@ -49,14 +47,14 @@
     }
     
     &__logo-text{
-        display:inline-block;
         font-size: 1.6rem;
-        padding:1rem;
-        vertical-align:top;
+        color:#fff;
+        font-weight: bold;
+        text-transform: uppercase;
     }
     
     &__title{
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
         align-self: center;
@@ -66,9 +64,10 @@
         font-size: 1.8rem;
         font-weight: normal;
         color:#fff;
-        font-weight: normal;
+        font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-        align-self: flex-start;
+        align-self: flex-end;
+        
     }
     
     &__icon{

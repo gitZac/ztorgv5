@@ -25,22 +25,14 @@
 
                 <div class="feat-proj__logo-cont">
                    
-                    <?php 
 
-                        $image = get_field('logo_image');
-
-                        if( !empty($image) ): ?>
-
-                            <img class="feat-proj__logo-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-                    <?php endif; ?>
                     
                     <p class="feat-proj__logo-text"><?php the_field('customer'); ?></p>
                     
                 </div>
 
                 <h4 class="feat-proj__title"><?php the_title(); ?></h4>
-                <a href="#" class="feat-proj__txt-link">Check it out<i class="feat-proj__icon fa fa-arrow-right"></i></a>
+                <a href="#" class="feat-proj__txt-link">Check It Out<i class="feat-proj__icon fa fa-arrow-right"></i></a>
 
             </div>
 

@@ -544,6 +544,9 @@ ol, ul {
 .e-image-scale img {
   transform: scale(1.1);
 }
+.u-accent {
+  color: #0090c5;
+}
 .u-text-center {
   text-align: center;
 }
@@ -920,6 +923,22 @@ a img.aligncenter {
   display: inline-block;
   padding: 3px;
 }
+.btn__body-text {
+  text-decoration: none;
+  color: #0090c5;
+  display: inline-block;
+  border-bottom: 1px solid #0090c5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn__body-text:hover {
+  background-color: #0090c5;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
 .view-article {
   color: #fff;
   display: inline-block;
@@ -1065,12 +1084,13 @@ a img.aligncenter {
   max-width: 120rem;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
 }
 .feat-proj__background {
   background-color: #333;
   grid-column: 3 / span 4;
-  grid-row: 1 / span 7;
+  grid-row: 1 / span 8;
+  box-shadow: 1px 1px 2px;
 }
 .feat-proj__image-container {
   grid-column: 2 / span 2;
@@ -1089,20 +1109,19 @@ a img.aligncenter {
   display: grid;
 }
 .feat-proj__logo-cont {
-  min-height: 5rem;
   align-self: flex-end;
 }
 .feat-proj__logo-image {
   max-height: 5rem;
 }
 .feat-proj__logo-text {
-  display: inline-block;
   font-size: 1.6rem;
-  padding: 1rem;
-  vertical-align: top;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .feat-proj__title {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   align-self: center;
@@ -1111,9 +1130,9 @@ a img.aligncenter {
   font-size: 1.8rem;
   font-weight: normal;
   color: #fff;
-  font-weight: normal;
+  font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  align-self: flex-start;
+  align-self: flex-end;
 }
 .feat-proj__icon {
   margin-left: 1rem;
@@ -1176,56 +1195,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 #wpcf7-f506-o1 {
   width: 100%;
-}
-.header {
-  padding: 6rem 0 2rem 0 !important;
-}
-.header__main {
-  font-size: 6.5rem;
-  margin-bottom: 0px;
-  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-}
-@media (max-width: 56.25em) {
-  .header__main {
-    font-size: 7rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .header__main {
-    font-size: 4rem;
-  }
-}
-.header__page-title {
-  font-size: 7rem;
-  margin-bottom: 3rem;
-  position: relative;
-  font-weight: 100;
-}
-.header__page-title:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 10%;
-  background-color: #0090c5;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.header__text-container p, .header__text-container ul {
-  font-size: 2rem;
-  padding-top: 2rem;
-  max-width: 96rem;
-  margin: 0 auto;
-  list-style: circle;
-}
-.header__text-container ul {
-  padding-left: 5rem;
-}
-.header__text-container li {
-  line-height: 145%;
 }
 .hero {
   overflow: hidden;
@@ -1420,6 +1389,56 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .fa-github-square:hover {
   color: #6e5494;
+}
+.header {
+  padding: 6rem 0 6rem 0 !important;
+}
+.header__main {
+  font-size: 6.5rem;
+  margin-bottom: 0px;
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+}
+@media (max-width: 56.25em) {
+  .header__main {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__main {
+    font-size: 4rem;
+  }
+}
+.header__page-title {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+  position: relative;
+  font-weight: 100;
+}
+.header__page-title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 10%;
+  background-color: #0090c5;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__text-container p, .header__text-container ul {
+  font-size: 2rem;
+  padding-top: 2rem;
+  max-width: 96rem;
+  margin: 0 auto;
+  list-style: circle;
+}
+.header__text-container ul {
+  padding-left: 5rem;
+}
+.header__text-container li {
+  line-height: 145%;
 }
 .port {
   display: grid;
