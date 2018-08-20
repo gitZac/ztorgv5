@@ -4,9 +4,9 @@
     grid-gap: .1rem;
     color:#fff;
     
-//    @include respond(){
-//        
-//    }
+    @include respond(phone-land){
+        grid-template-columns: 1fr;
+    }
     
     &__card{
         position: relative;
@@ -18,7 +18,6 @@
         background-position: center center;
         background-repeat: no-repeat;
         padding-top: 2rem;
-
     }
     
     &__card:after{
@@ -52,12 +51,16 @@
         grid-column: 2 / span 3;
         grid-row: 3 / span 2;
         
+        @include respond(tab-landscape){
+            transform: translateY(4rem);
+        }
+        
         font-size: 3rem;
         line-height: 145%;
         padding-top: 1rem;
         text-shadow: 1px 1px 1px #000;
     
-        transform: translateY(80px);
+        transform: translateY(8rem);
         opacity: 1;
         
         transition: all 0.5s ease-in-out;
@@ -72,8 +75,7 @@
         grid-column: 2 / span 3;
         grid-row: 2 / span 1;
         font-size: 1.8rem;
-        align-self: flex-end;
-        
+        align-self: flex-end;      
         
         transform: translateX(1000px);
         opacity: 0;

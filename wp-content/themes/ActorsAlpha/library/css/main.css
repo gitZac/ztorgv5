@@ -1217,6 +1217,8 @@ div.wpcf7 input, div.wpcf7 textarea {
   position: relative;
   margin-top: 9rem;
 }
+@media (max-width: 43.75em) {
+}
 .hero__content {
   position: absolute;
   top: 50%;
@@ -1424,6 +1426,11 @@ div.wpcf7 input, div.wpcf7 textarea {
   grid-gap: 0.1rem;
   color: #fff;
 }
+@media (max-width: 43.75em) {
+  .port {
+    grid-template-columns: 1fr;
+  }
+}
 .port__card {
   position: relative;
   display: grid;
@@ -1463,9 +1470,14 @@ div.wpcf7 input, div.wpcf7 textarea {
   line-height: 145%;
   padding-top: 1rem;
   text-shadow: 1px 1px 1px #000;
-  transform: translateY(80px);
+  transform: translateY(8rem);
   opacity: 1;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 75em) {
+  .port__title {
+    transform: translateY(4rem);
+  }
 }
 .port__card:hover .port__title {
   transform: translateY(0);
@@ -1501,31 +1513,6 @@ div.wpcf7 input, div.wpcf7 textarea {
 .port__card:hover .port__btn-container {
   opacity: 1;
 }
-.port__card--fw {
-  grid-column: 1 / span 2;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-.port__title--fw {
-  font-size: 3rem;
-  line-height: 145%;
-  padding-top: 1rem;
-  grid-column: 2 / span 3;
-  grid-row: 3 / span 1;
-}
-.port__logo--fw {
-  grid-column: 2 / span 1;
-  grid-row: 2/ span 1;
-}
-.port__plist--fw {
-  grid-column: 4 / span 2;
-  grid-row: 2/ span 1;
-  font-size: 1.8rem;
-}
-.port__plist-item--fw {
-  display: inline;
-}
 .promo {
   max-width: 100rem;
   padding: 3rem 0;
@@ -1544,6 +1531,18 @@ div.wpcf7 input, div.wpcf7 textarea {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 43.75em) {
+  .promo__title--large {
+    text-align: left;
+    font-size: 3rem;
+    max-width: 70rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .promo__title--large {
+    font-size: 2.5rem;
+  }
+}
 .promo__title--scale {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
@@ -1559,6 +1558,11 @@ div.wpcf7 input, div.wpcf7 textarea {
 .promo__button-container--center {
   margin: 0 auto;
   width: 25%;
+}
+@media (max-width: 43.75em) {
+  .promo__button-container--center {
+    margin: 0;
+  }
 }
 .promo__btn-text {
   font-size: 2.2rem;

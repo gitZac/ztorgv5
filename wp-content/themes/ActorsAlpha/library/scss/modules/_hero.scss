@@ -7,6 +7,12 @@
     position: relative;
     margin-top: 9rem;
     
+    @include respond(phone-land){
+        
+//        height:60vh;
+    }
+
+    
     &__content{
         position: absolute;
         top:50%;
