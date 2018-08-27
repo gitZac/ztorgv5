@@ -24,7 +24,7 @@
                    
                    </p>
                    
-                   <a href="<?php the_field('link'); ?>" class="services__link">Learn More<i class="feat-proj__icon fa fa-arrow-right"></i></a>
+                   <a href="<?php the_permalink(); ?>" class="services__link">Learn More<i class="feat-proj__icon fa fa-arrow-right"></i></a>
 
                 </div>
 

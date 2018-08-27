@@ -14,19 +14,17 @@
         <div class="feat-proj">
 
             <div class="feat-proj__background"></div>
-
-            <div class="feat-proj__image-container">
-
+            
+            <figure class="feat-proj__image-container">
+               
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="feat-proj__image">
-
-            </div>
+                
+            </figure>
 
             <div class="feat-proj__text-container">
 
                 <div class="feat-proj__logo-cont">
-                   
-
-                    
+                       
                     <p class="feat-proj__logo-text"><?php the_field('customer'); ?></p>
                     
                 </div>

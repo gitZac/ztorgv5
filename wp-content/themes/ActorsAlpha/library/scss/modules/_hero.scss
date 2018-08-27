@@ -7,12 +7,6 @@
     position: relative;
     margin-top: 9rem;
     
-    @include respond(phone-land){
-        
-//        height:60vh;
-    }
-
-    
     &__content{
         position: absolute;
         top:50%;
@@ -68,11 +62,5 @@
         @include respond(phone){
             max-width: 80%;
         }
-
     } 
-}
-
-.hero--inner{
-    padding: 6rem 0 !important;
-    overflow:hidden;
 }

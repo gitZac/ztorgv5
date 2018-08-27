@@ -1093,38 +1093,59 @@ a img.aligncenter {
 }
 .feat-proj {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 2.5rem);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 3vw);
   max-width: 120rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 0.5rem 2rem;
 }
+@media (max-width: 56.25em) {
+  .feat-proj {
+    display: block;
+  }
+}
 .feat-proj__background {
   background-color: #333;
-  grid-column: 3 / span 4;
-  grid-row: 1 / span 8;
+  grid-column: 3 / span 8;
+  grid-row: 2 / span 6;
   box-shadow: 1px 1px 2px;
 }
 .feat-proj__image-container {
-  grid-column: 2 / span 2;
-  grid-row: 3 / span 5;
-  overflow: hidden;
-  max-height: 15rem;
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 6;
+}
+@media (max-width: 56.25em) {
+  .feat-proj__image-container {
+    margin: 0 auto;
+    width: 75%;
+  }
 }
 .feat-proj__image {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .feat-proj__text-container {
-  grid-column: 4 / span 3;
+  grid-column: 6 / span 5;
   grid-row: 2 / span 6;
+  align-self: center;
   color: #fff;
   padding: 0 2rem;
-  display: grid;
+}
+@media (max-width: 56.25em) {
+  .feat-proj__text-container {
+    width: 75%;
+    background-color: #333;
+    margin: 0.2rem auto;
+    padding: 2rem;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+  }
 }
 .feat-proj__logo-cont {
-  align-self: flex-end;
+  padding-bottom: 2rem;
 }
 .feat-proj__logo-image {
   max-height: 5rem;
@@ -1136,10 +1157,12 @@ a img.aligncenter {
   text-transform: uppercase;
 }
 .feat-proj__title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  align-self: center;
+  padding-bottom: 2rem;
+}
+@media (max-width: 43.75em) {
 }
 .feat-proj__txt-link {
   font-size: 1.8rem;
@@ -1147,7 +1170,7 @@ a img.aligncenter {
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  align-self: flex-end;
+  align-self: center;
 }
 .feat-proj__icon {
   margin-left: 1rem;
@@ -1162,7 +1185,7 @@ a img.aligncenter {
 }
 .footer__social-content {
   padding: 5rem 0;
-  text-align: center;
+  text-align: left;
 }
 .footer__copyright-content {
   color: #fff;
@@ -1406,6 +1429,9 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .page-intro {
   padding: 6rem 0 6rem 0 !important;
+}
+.page-intro__text-box {
+  padding: 0 3.5rem;
 }
 .page-intro__text-box p, .page-intro__text-box ul {
   font-size: 2rem;

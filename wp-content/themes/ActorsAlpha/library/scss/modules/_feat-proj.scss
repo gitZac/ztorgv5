@@ -1,8 +1,7 @@
 .feat-proj{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 2.5rem);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 3vw);
     
     //WRAPPER styles
     max-width: 120rem;
@@ -10,36 +9,54 @@
     overflow: hidden;
     padding: .5rem 2rem;
     
+    @include respond(tab-port){
+        display: block;
+    }
+    
     &__background{
         background-color: #333;
-        grid-column: 3 / span 4;
-        grid-row: 1 / span 8;
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 6;
         box-shadow: 1px 1px 2px;
     }
     
     &__image-container{
-        grid-column: 2 / span 2;
-        grid-row: 3 / span 5;
-        overflow: hidden;
-        max-height: 15rem;   
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 6;
+        
+        @include respond(tab-port){
+            margin: 0 auto;
+            width:75%;
+        }
     }
     
     &__image{
         box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        display: block;
     }
     
     &__text-container{
-        grid-column: 4 / span 3;
+        grid-column: 6 / span 5;
         grid-row: 2 / span 6;
         
+        align-self: center;
         color:#fff;
         padding: 0 2rem;
         
-        display:grid;
+        @include respond(tab-port){
+            width:75%;
+            background-color:#333;
+            margin: .2rem auto;
+            padding: 2rem;
+            box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+        }  
     }
     
     &__logo-cont{
-        align-self: flex-end;
+        padding-bottom: 2rem;
     }
     
     &__logo-image{
@@ -54,10 +71,10 @@
     }
     
     &__title{
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-        align-self: center;
+        padding-bottom: 2rem;    
     }
     
     &__txt-link{
@@ -66,8 +83,7 @@
         color:#fff;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-        align-self: flex-end;
-        
+        align-self: center;  
     }
     
     &__icon{
