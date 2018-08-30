@@ -49,7 +49,7 @@
 
             <div class="port__btn-container">
                
-                <a href="" class="btn--text">Learn More<i class="feat-proj__icon fa fa-arrow-right"></i></a>
+                <a href="<?php the_permalink(); ?>" class="btn--text">Learn More<i class="feat-proj__icon fa fa-arrow-right"></i></a>
                 
             </div>
             

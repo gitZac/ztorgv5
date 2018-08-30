@@ -1162,8 +1162,6 @@ a img.aligncenter {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   padding-bottom: 2rem;
 }
-@media (max-width: 43.75em) {
-}
 .feat-proj__txt-link {
   font-size: 1.8rem;
   font-weight: normal;
@@ -1240,7 +1238,14 @@ div.wpcf7 input, div.wpcf7 textarea {
   position: relative;
   margin-top: 9rem;
 }
-@media (max-width: 43.75em) {
+.hero--blog {
+  height: 50vh;
+  background: no-repeat center center fixed;
+  margin-top: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero__content {
   position: absolute;
@@ -1260,6 +1265,9 @@ div.wpcf7 input, div.wpcf7 textarea {
   .hero__content {
     left: 60%;
   }
+}
+.hero__content--blog {
+  left: 50%;
 }
 .hero__btn-container {
   padding: 3rem 0;
@@ -1284,6 +1292,13 @@ div.wpcf7 input, div.wpcf7 textarea {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.hero__title--blog {
+  text-align: center;
+  max-width: 100%;
+}
+.hero__title--blog::after {
+  display: none;
+}
 .hero__text {
   font-size: 2.2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -1298,10 +1313,6 @@ div.wpcf7 input, div.wpcf7 textarea {
   .hero__text {
     max-width: 80%;
   }
-}
-.hero--inner {
-  padding: 6rem 0 !important;
-  overflow: hidden;
 }
 .logo {
   text-align: center;
@@ -1433,6 +1444,9 @@ div.wpcf7 input, div.wpcf7 textarea {
 .page-intro__text-box {
   padding: 0 3.5rem;
 }
+.page-intro__text-box--blog {
+  padding: 3.5rem 3.5rem;
+}
 .page-intro__text-box p, .page-intro__text-box ul {
   font-size: 2rem;
   padding-top: 2rem;
@@ -1538,6 +1552,18 @@ div.wpcf7 input, div.wpcf7 textarea {
 }
 .port__card:hover .port__btn-container {
   opacity: 1;
+}
+.port__plist--blog {
+  color: #fff;
+  max-width: 96rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.port__plist-item--blog {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  padding: 1rem !important;
+  background-color: #333;
 }
 .promo {
   max-width: 100rem;

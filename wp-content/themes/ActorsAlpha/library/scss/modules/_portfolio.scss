@@ -82,7 +82,7 @@
         
         transition: all 0.5s ease-in-out;
     }
-    
+        
     &__card:hover &__plist{
         opacity: 1;
         transform: translateX(0);   
@@ -93,7 +93,7 @@
         border-right: 1px solid #fff;
         padding:0 .5rem;
     }
-    
+        
     &__plist-item:last-child{
         border:none;
     }
@@ -109,4 +109,21 @@
     &__card:hover &__btn-container{
         opacity: 1;
     }
+    
+// ***********For single-scrapbook template and blog pages*********
+    &__plist--blog{
+        color:#fff;
+        max-width: 96rem;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    &__plist-item--blog{
+        font-size: 1.2rem !important;
+        font-weight: bold;
+
+        padding:1rem !important;
+        background-color: #333;
+    }
+    
 }

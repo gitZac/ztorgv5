@@ -7,6 +7,16 @@
     position: relative;
     margin-top: 9rem;
     
+    &--blog{
+        height:50vh;
+        background:no-repeat center center fixed;
+        margin-top: 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
     &__content{
         position: absolute;
         top:50%;
@@ -23,6 +33,10 @@
         @include respond(phone){
             left:60%;
         }
+    }
+    
+    &__content--blog{
+        left:50%;
     }
     
     &__btn-container{
@@ -47,6 +61,15 @@
             background: $colorSecondary;
             margin-top: 3rem;
             margin-bottom: 3rem;   
+        }
+    }
+    
+    &__title--blog{
+        text-align: center;
+        max-width: 100%;
+        
+        &::after{
+            display: none;
         }
     }
     

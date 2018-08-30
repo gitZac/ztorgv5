@@ -30,7 +30,7 @@
                 </div>
 
                 <h4 class="feat-proj__title"><?php the_title(); ?></h4>
-                <a href="#" class="feat-proj__txt-link">Check It Out<i class="feat-proj__icon fa fa-arrow-right"></i></a>
+                <a href="<?php the_permalink(); ?>" class="feat-proj__txt-link">Check It Out<i class="feat-proj__icon fa fa-arrow-right"></i></a>
 
             </div>
 
